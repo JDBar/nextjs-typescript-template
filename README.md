@@ -17,6 +17,10 @@ This includes what I consider to the absolute bare minimum needed for a new proj
 
 ## Installation
 
+### Using Github's Template Feature
+
+1. Create a new repository via the "Use Template" button on Github. ([More instructions here.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)).
+
 ### Using `create-next-app`
 ```bash
 npx create-next-app your-project -e "https://github.com/jdbar/nextjs-typescript-template"
