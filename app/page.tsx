@@ -1,22 +1,16 @@
 import Image from "next/image";
 import styles from "@/styles/Page.module.scss";
-
-function getData() {
-	return new Promise<{value: number}>((resolve) => {
-		setTimeout(() => {
-			resolve({value: 123});
-		}, 1000);
-	});
-}
+import {getUserData} from "@/pages/api/user";
 
 export default async function Home() {
-	const data = await getData();
-	console.log(data);
+	// Just an example of making an async server component.
+	const data = await getUserData();
+
 	return (
 		<div className={styles.container}>
 			<main className={styles.main}>
 				<h1 className={styles.title}>
-					Welcome to <a href="https://nextjs.org">Next.js 13!</a>
+					Welcome {data.name} to <a href="https://nextjs.org">Next.js 13!</a>
 				</h1>
 
 				<p className={styles.description}>
