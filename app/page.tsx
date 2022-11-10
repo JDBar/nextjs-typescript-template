@@ -1,10 +1,17 @@
 import Image from "next/image";
 import styles from "@/styles/Page.module.scss";
-import {getUserData} from "@/pages/api/user";
+
+function getData() {
+	return new Promise<{value: number}>((resolve) => {
+		setTimeout(() => {
+			resolve({value: 123});
+		}, 1000);
+	});
+}
 
 export default async function Home() {
-	const userData = await getUserData();
-	console.log(userData);
+	const data = await getData();
+	console.log(data);
 	return (
 		<div className={styles.container}>
 			<main className={styles.main}>
