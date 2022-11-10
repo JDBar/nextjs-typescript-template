@@ -1,8 +1,8 @@
-# Minimal Next.js TypeScript Starter/Template
+# Semi-Minimal Next.js TypeScript Starter/Template
 
 I'm a big fan of Next.js and TypeScript, and often find myself doing the same exact things for every new experiment and project I build.
 
-So, I created this minimal [Next.js](https://nextjs.org/) TypeScript project starter bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+So, I created this semi-minimal [Next.js](https://nextjs.org/) TypeScript project starter bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 This includes what I consider to the absolute bare minimum needed for a new project, though it doesn't include a testing framework, since that would be difficult to include without making this a bulkier more opinionated starter repo.
 
@@ -11,6 +11,7 @@ This includes what I consider to the absolute bare minimum needed for a new proj
 * Next.js
 * TypeScript
 * ESLint
+* SASS + type definitions for CSS modules
 * Prettier
 * Pretty-quick
 * Visual Studio Code extension recommendations
