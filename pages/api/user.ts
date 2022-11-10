@@ -17,7 +17,6 @@ export default async (
 export function getUserData(): Promise<IUserDataResponse> {
 	return new Promise<IUserDataResponse>((resolve) => {
 		setTimeout(() => {
-			console.log("resolved");
 			resolve({name: "John Doe"});
 		}, 1000);
 	});
